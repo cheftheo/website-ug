@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700;800&display=swap');
+
+* {
+  user-select: none;
+  overflow: hidden;
+  font-family: "Montserrat";
+
+}
+
+html {
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(170deg, rgba(2,0,36,1) 0%, rgb(92, 39, 128) 100%);
+}
+
+#main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#centredDivs {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 16%;
+  left: 13%;
+
+  overflow: visible;
+}
+
+#char {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(2,0,36,0) 0%, rgba(255,255,255,0.9) 48%, rgba(138,43,201,0) 100%);
+  border-image-slice: 1;
+}
+
+#logo {
+  position: absolute;
+  left: 10%;
+  z-index: -1;
+}
+
+#centredDivs p {
+  position: inherit;
+  left: 130%;
+  color: white; 
+  padding-right: 10%;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 80%;
+}
+
+#centredDivs h2 {
+  position: absolute;
+  top: 65%;
+  left: 160%;
+  width: 100%;
+  font-size: medium;
+  color: white;
+}
+
+#centredDivs h2 span {
+  color: rgb(227, 194, 253);
+}
+
+#buttons {
+  position: absolute;
+  top: 75%;
+  left: 130%;
+  display: flex;
+  justify-content: center;
+}
+
+#buttons button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: rgb(227, 194, 253);
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+#buttons button:hover {
+  background: white;
+  color: black;
+}
+
+#socials {
+  position: absolute;
+  top: 90%;
+  overflow: visible;
+  left: 160%;
+  display: flex;
+}
+
+#socials button {
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;  
+  color: white;
+  font-size: 1.5em;
+  transition: all 1s ease;
+}
+
+#socials button:hover {
+  font-size: 1.9em;
+  color: rgb(227, 194, 253);
+}
+
+canvas {
+  position: absolute;
+  z-index: 1;
+}
